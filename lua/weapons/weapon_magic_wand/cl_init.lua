@@ -4,10 +4,6 @@ local grabbed = false
 
 local WorldModel = ClientsideModel(SWEP.WorldModel)
 
-function SWEP:Initialize()
-	grabbed = false
-end
-
 -- Settings...
 WorldModel:SetSkin(1)
 WorldModel:SetNoDraw(true)
