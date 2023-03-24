@@ -1,0 +1,5 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "magic_wand/texture"
+	"$bumpmap" "magic_wand/normal"
+}
