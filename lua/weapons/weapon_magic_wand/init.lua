@@ -5,6 +5,7 @@ include("shared.lua")
 
 function SWEP:PrimaryAttack()
 	self:SetNextPrimaryFire(CurTime() + 2.0)
+	self:SendWeaponAnim(ACT_VM_PRIMARYATTACK)
 end
 
 function SWEP:OnDrop()
