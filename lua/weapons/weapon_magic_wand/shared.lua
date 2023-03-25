@@ -25,8 +25,8 @@ SWEP.HoldType 	= "pistol"
 SWEP.ViewModelFOV = 40
 SWEP.ViewModelFlip = false
 SWEP.UseHands = true
-SWEP.ViewModel = "models/magic_wand/c_magic_wand.mdl"
-SWEP.WorldModel = "models/magic_wand/magic_wand.mdl"
+SWEP.ViewModel = "models/magic_wand/c_magic_wand/c_magic_wand.mdl"
+SWEP.WorldModel = "models/magic_wand/w_magic_wand/magic_wand.mdl"
 SWEP.ShowViewModel = true
 SWEP.ShowWorldModel = true
 
