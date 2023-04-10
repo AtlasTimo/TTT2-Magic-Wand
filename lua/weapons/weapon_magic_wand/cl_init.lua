@@ -1,8 +1,12 @@
 include("shared.lua")
 
-local grabbed = false
-
+local Spell1 = 0;
+local Spell2 = 1:
 local WorldModel = ClientsideModel(SWEP.WorldModel)
+
+function SWEP:Initialize()
+	self.SelectedSpell = Spell1
+end
 
 -- Settings...
 WorldModel:SetSkin(1)
@@ -13,8 +17,8 @@ function SWEP:DrawWorldModel()
 
 	if (IsValid(_Owner)) then
 		-- Specify a good position
-		local offsetVec = Vector(0, 0, 0)
-		local offsetAng = Angle(0, 0, 180)
+		local offsetVec = Vector(3, -1, -3)
+		local offsetAng = Angle(80, 0, 0)
 
 		local boneid = _Owner:LookupBone("ValveBiped.Bip01_R_Hand") -- Right Hand
 		if !boneid then return end
@@ -36,7 +40,9 @@ function SWEP:DrawWorldModel()
 	WorldModel:DrawModel()
 end
 
-function SWEP:PrimaryAttack()
-
+function SWEP:DrawHUD()
+	if (self:GetOwner() == LocalPlayer() && self:GetOwner():ShouldDrawLocalPlayer()) then
+		
+	end
 end
 
