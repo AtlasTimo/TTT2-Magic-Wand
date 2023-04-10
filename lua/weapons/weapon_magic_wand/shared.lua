@@ -21,7 +21,7 @@ SWEP.SlotPos			= 2
 SWEP.DrawAmmo			= true
 SWEP.DrawCrosshair		= true
 
-SWEP.HoldType 	= "pistol"
+SWEP.HoldType 	= "meele"
 SWEP.ViewModelFOV = 40
 SWEP.ViewModelFlip = false
 SWEP.UseHands = true
